@@ -27,7 +27,7 @@ Route::get('category/indexx/', [CategoryController::class, 'indexcatgor']);
 Route::post('category/createdata/', [CategoryController::class, 'createdata']);
 Route::post('category/update/{id}', [CategoryController::class, 'update']);
 Route::post('category/destroy/{id}', [CategoryController::class, 'destroy']);
-Route::get('category/show/{id}', [CategoryController::class, 'show']);
+Route::get('category/tampil/{id}', [CategoryController::class, 'show']);
 //barang
 Route::Get('course/index/', [CoursesController::class, 'index']);
 Route::post('course/create/', [CoursesController::class, 'create']);
