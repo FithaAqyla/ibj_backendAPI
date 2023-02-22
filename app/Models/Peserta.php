@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class Peserta extends Model
 {
     protected $table ='pesertas';
+    //primarykey table user
     protected $primaryKey = 'id_user';
     protected $fillable = [
         'name','email', 'password',
