@@ -26,7 +26,7 @@ class UsercoursesController extends Controller
         $uc->id_user = $request->id_user;
         $uc->id_courses = $request->id_courses;
         $uc->save();
-        return response()->json($uc.' Berhasil DiTambahkan');
+        return response()->json('Data '.$uc.' Berhasil DiTambahkan');
     }
 
     /**
