@@ -23,7 +23,7 @@ class PesertasController extends Controller
         $peserta->email=$request->email;
         $peserta->password=Hash::make($request->password);
         $peserta->save();
-        return response()->json($peserta);
+        return response()->json('Data '.$peserta->name.'  Berhasil Ditambahkan');
     }
 
     /**
