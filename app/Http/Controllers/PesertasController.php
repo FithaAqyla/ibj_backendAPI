@@ -29,7 +29,7 @@ class PesertasController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Peserta $id)
+    public function show($id)
     {
         $pesertas = Peserta::find($id);
         return response()->json($peserta);
