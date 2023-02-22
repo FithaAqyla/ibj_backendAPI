@@ -21,12 +21,13 @@ Route::get('pesertas/index/',[PesertasController::class,'index']);
 Route::post('pesertas/store/',[PesertasController::class,'store']);
 Route::post('pesertas/update/{id}', [PesertasController::class,'edit']);
 Route::post('pesertas/destroy/{id}', [PesertasController::class,'delete']);
-
+Route::get('pesertas/show/{id}', [PesertasController::class, 'show']);
 //category
 Route::get('category/indexx/', [CategoryController::class, 'indexcatgor']);
 Route::post('category/createdata/', [CategoryController::class, 'createdata']);
 Route::post('category/update/{id}', [CategoryController::class, 'update']);
 Route::post('category/destroy/{id}', [CategoryController::class, 'destroy']);
+Route::get('category/show/{id}', [CategoryController::class, 'show']);
 //barang
 Route::Get('course/index/', [CoursesController::class, 'index']);
 Route::post('course/create/', [CoursesController::class, 'create']);
@@ -40,6 +41,8 @@ Route::post('uc/create/', [UsercoursesController::class, 'create']);
 Route::post('uc/update/{id}', [UsercoursesController::class, 'update']);
 Route::post('uc/destroy/{id}', [UsercoursesController::class, 'destroy']);
 Route::get('uc/show/{id}', [UsercoursesController::class, 'show']);
+Route::get('uc/getCourseByUser/{id_user}', [UsercoursesController::class, 'getCourseByUser']);
+Route::get('uc/getUserByCourse/{id}', [UsercoursesController::class, 'getUserByCourse']);
 
 /*
 |--------------------------------------------------------------------------
