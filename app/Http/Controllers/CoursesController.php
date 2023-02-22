@@ -59,7 +59,7 @@ class CoursesController extends Controller
     {
         $post = Courses::find($id);
         $post->delete();
-        return response()->json('Data '.$post->title.' Berhasil DiUpdate');
+        return response()->json('Data '.$post->title.' Berhasil DiHapus');
 
     }
     public function getCoursesCategory($course_category_id){
